@@ -93,7 +93,7 @@ try:
     def on_publish(client, userdata, mid):
       receivedMessages.append(mid)
 
-    client = mqtt.Client(client_id="trashcan1")
+    client = mqtt.Client(client_id="{{clientID}}")
 
     client.username_pw_set("{tenantID}/{username}", "cumulocity")
     client.on_publish = on_publish
