@@ -23,10 +23,10 @@ The HC-SR04 ultrasonic distance sensor's voltage needs to be regulated from 5V t
 ### Script Modifications:
 Open the smartTrash.py script, and modify the following:
 
-- Tenant URL
+- Tenant URL\
 This is your own personal C8Y ID
 
-- clientID
+- clientID\
 This could be anything. This is used as a unique identifier for your MQTT messages to be mapped to a device and assist in device creation.
 
 - tenantID
