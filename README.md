@@ -23,9 +23,30 @@ The HC-SR04 ultrasonic distance sensor's voltage needs to be regulated from 5V t
 ### Script Modifications:
 Open the smartTrash.py script, and modify the following:
 
-URL, clientID, tenantID, username, password.
+- Tenant URL
+This is your own personal C8Y ID
 
-Client ID should be unique per device (if you plan on creating multiple devices)
+- clientID
+This could be anything. This is used as a unique identifier for your MQTT messages to be mapped to a device and assist in device creation.
+
+- tenantID
+Unique system generated ID for your tenant. You can get the tenantID by running the following API Call
+
+```
+	GET /tenant/currentTenant
+```
+
+- username/password.
+Basic Auth is fine for MQTT messages. Although it's not required, you will need to encode it in Base64 if you plan on using the API calls. 
+
+Synatax for Basic Auth in Base64 is as follows:
+
+```
+	Basic tenantID/username:password
+```
+
+
+Client ID should be unique per device (if you plan on creating multiple devices). This will be used in the MQTT call.
 
 ### Running
 
