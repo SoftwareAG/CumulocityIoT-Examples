@@ -95,7 +95,7 @@ try:
 
     client = mqtt.Client(client_id="{{clientID}}")
 
-    client.username_pw_set("{tenantID}/{username}", "cumulocity")
+    client.username_pw_set("{tenantID}/{username}", "{password}")
     client.on_publish = on_publish
     client.connect("mqtt.us.cumulocity.com", 1883)
     client.loop_start()
