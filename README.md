@@ -57,3 +57,6 @@ Client ID should be unique per device (if you plan on creating multiple devices)
 ```
 
 This should automatically trigger device creation in Cumulocity and the distance measurements on the python console should start being posted under the measurements tab under device management application for your specific device. You can then start creating a dashboard and apama analytics rules to further built on this demo. 
+
+------------
+These tools are provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the main project.
